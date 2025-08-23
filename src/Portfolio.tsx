@@ -14,11 +14,11 @@ import {
 const PROJECTS = [
   {
     id: 1,
-    title: "Transit Insights Dashboard",
-    category: "Development",
+    title: "Gesture Guide Page",
+    category: "Web Design",
     description:
-      "A real-time metro and bus analytics dashboard with map overlays, filters, and performance charts.",
-    tech: ["React", "Node", "PostGIS"],
+      "Interactive and responsive web page that is compatible for the Gesture Guide project, with a live demo.",
+    tech: ["HTML", "CSS", "JavaScript"],
     image: "data:image/svg+xml;utf8,\
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'>\
         <defs>\
@@ -35,15 +35,15 @@ const PROJECTS = [
         </g>\
         <text x='40' y='70' fill='%23d1fae5' font-family='Inter, sans-serif' font-size='36'>Transit Insights</text>\
       </svg>",
-    link: "#",
+    link: "https://berkelahna.github.io/Pages/index.html#",
   },
   {
     id: 2,
-    title: "E‑Commerce Starter",
-    category: "Web Design",
+    title: "Gesture Guide App",
+    category: "Mobile Development",
     description:
-      "Responsive storefront with product grid, search, cart flow, and accessible components.",
-    tech: ["Next.js", "Tailwind", "Stripe"],
+      "Mobile app designed for interpreting sign language with a backend server for interpretation.",
+    tech: ["Kotlin", "XML", "Python"],
     image: "data:image/svg+xml;utf8,\
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'>\
         <defs>\
@@ -64,11 +64,11 @@ const PROJECTS = [
   },
   {
     id: 3,
-    title: "UX Research Notes",
-    category: "UX/UI",
+    title: "Energy Tycoon",
+    category: "Game Development",
     description:
-      "Interactive research repository with tags, heatmaps, and insight synthesis boards.",
-    tech: ["Svelte", "Firebase"],
+      "A strategy game where players manage resources, build and upgrade their infrastructure to generate energy, money, and research points.",
+    tech: ["Python", "Pygame"],
     image: "data:image/svg+xml;utf8,\
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'>\
         <rect width='800' height='500' fill='%230b1220'/>\
@@ -84,11 +84,31 @@ const PROJECTS = [
   },
   {
     id: 4,
-    title: "Realtime Chat",
-    category: "Development",
+    title: "Space Miner",
+    category: "Game Development",
     description:
-      "End‑to‑end encrypted chat with presence, typing indicators, and optimistic UI.",
-    tech: ["React", "WebSocket", "Zustand"],
+      "A game where the players mine asteroids in space while battling enemies.",
+    tech: ["Python", "Pygame"],
+    image: "data:image/svg+xml;utf8,\
+      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'>\
+        <rect width='800' height='500' fill='%230b1220'/>\
+        <g stroke='%23c7d2fe' stroke-width='3' fill='none'>\
+          <rect x='80' y='80' width='640' height='340' rx='16'/>\
+          <circle cx='200' cy='180' r='40'/>\
+          <circle cx='400' cy='240' r='60'/>\
+          <circle cx='600' cy='200' r='30'/>\
+        </g>\
+        <text x='100' y='120' fill='%23ffd1f7' font-size='32' font-family='Inter, sans-serif'>UX Research</text>\
+      </svg>",
+    link: "#",
+  },
+  {
+    id:5,
+    title: "Bank Term Deposit Classification",
+    category: "Machine Learning",
+    description:
+      "Simple collaborative project on a Classification ML model",
+    tech: ["Python","Streamlit"],
     image: "data:image/svg+xml;utf8,\
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'>\
         <rect width='800' height='500' fill='%230a0f1f'/>\
@@ -99,38 +119,49 @@ const PROJECTS = [
         </g>\
         <text x='130' y='90' fill='%23c7d2fe' font-size='30' font-family='Inter, sans-serif'>Chat UI</text>\
       </svg>",
-    link: "#",
+    link: "https://berkelahna-ada442final-project-app-wovmxi.streamlit.app/",
   },
 ];
 
 const SKILLS = [
-  { name: "JavaScript", level: 88, blurb: "6 projects, heavy on React + tooling." },
-  { name: "React", level: 86, blurb: "Hooks, state mgmt, perf patterns." },
-  { name: "Node.js", level: 74, blurb: "REST APIs, auth, queues, caching." },
-  { name: "UI/UX", level: 70, blurb: "Figma to code, accessibility first." },
-  { name: "DevOps", level: 55, blurb: "Docker, CI, preview envs." },
+  { name: "Java", level: 92, blurb: "4 Years of learning as the main language of TED University." },
+  { name: "SQL", level: 86, blurb: "Hooks, state mgmt, perf patterns." },
+  { name: "C", level: 74, blurb: "Used for 2 Terms." },
+  { name: "React", level: 70, blurb: "Used for a month is Aselsan internship project as the frontend counterpart." },
+  { name: ".NET", level: 65, blurb: "Used for a month is Aselsan internship project as the backend counterpart." },
+  { name: "Kotlin", level: 75, blurb: "Used in the senior project." },
+  { name: "R", level: 85, blurb: "Used in the Applied Data Analytics secondary field for a term." },
+  { name: "Julia", level: 82, blurb: "Used in the Applied Data Analytics secondary field for a term." },
+  { name: "Python", level: 90, blurb: "Used in the Applied Data Analytics secondary field for 2 terms and some personal projects." },
+  { name: "Machine Learning", level: 60, blurb: "Took several courses about it in both Applied Data Analytics field and Computer engineering field." },
+  { name: "Embedded Systems", level: 65, blurb: "Took a course about it." },
+  { name: "C++", level: 55, blurb: "Used in Cey Savunma Internship project for a month." },
+  { name: "QT", level: 60, blurb: "Used in Cey Savunma Internship project for a month." },
 ];
 
-const TESTIMONIALS = [
+const REFERENCES = [
   {
     quote:
-      "Delivers clean, scalable frontends with excellent attention to details and performance.",
-    name: "A. Kaya",
-    role: "Senior Engineer",
-    avatar: "https://api.dicebear.com/7.x/notionists/svg?seed=kaya",
+      "ASELSAN Project Manager of Department of Communication.",
+    name: "Çağdaş Lahna",
+    avatar: "https://www.linkedin.com/in/cagdas-lahna-87812759/overlay/photo/",
   },
   {
     quote:
-      "Understands product needs and translates them into delightful interactions.",
-    name: "M. Demir",
-    role: "Product Manager",
+      "TUSAŞ Senior Engineer of Design, Production, and Maintenance of Aircraft Ground Support Equipment.",
+    name: "Bülent Çakmak",
     avatar: "https://api.dicebear.com/7.x/notionists/svg?seed=demir",
   },
   {
     quote:
-      "Reliable teammate—ship dates met, code reviews solid, docs on point.",
-    name: "Z. Arslan",
-    role: "Tech Lead",
+      "TEDU Head of Computer Engineering.",
+    name: "Gökçe Nur Yılmaz",
+    avatar: "https://api.dicebear.com/7.x/notionists/svg?seed=arslan",
+  },
+    {
+    quote:
+      "TEDU Vice Head Of Computer Engineering.",
+    name: "Venera Adanova",
     avatar: "https://api.dicebear.com/7.x/notionists/svg?seed=arslan",
   },
 ];
@@ -287,12 +318,12 @@ export default function Portfolio() {
     alert("Thanks! Your message has been queued.");
   };
 
-  // Testimonials autoplay
+  // References autoplay
   const [idx, setIdx] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
   useEffect(() => {
     if (!autoPlay) return;
-    const id = setInterval(() => setIdx((i) => (i + 1) % TESTIMONIALS.length), 3500);
+    const id = setInterval(() => setIdx((i) => (i + 1) % REFERENCES.length), 3500);
     return () => clearInterval(id);
   }, [autoPlay]);
 
@@ -312,10 +343,10 @@ export default function Portfolio() {
           <nav className="hidden gap-6 md:flex">
             {[
               ["About", "#about"],
+              ["Education & Experience", "#Education_Experience"],
               ["Work", "#work"],
               ["Skills", "#skills"],
-              ["Testimonials", "#testimonials"],
-              ["Contact", "#contact"],
+              ["References", "#references"],
             ].map(([label, link]) => (
               <a
                 key={label}
@@ -329,14 +360,14 @@ export default function Portfolio() {
           <div className="flex items-center gap-3">
             <a
               aria-label="GitHub"
-              href="#"
+              href="https://github.com/BerkeLahna"
               className="rounded-xl border border-white/10 bg-white/5 p-2 text-white/80 transition hover:scale-105 hover:text-white"
             >
               <Github size={18} />
             </a>
             <a
               aria-label="LinkedIn"
-              href="#"
+              href="https://www.linkedin.com/in/berke-lahna"
               className="rounded-xl border border-white/10 bg-white/5 p-2 text-white/80 transition hover:scale-105 hover:text-white"
             >
               <Linkedin size={18} />
@@ -360,10 +391,10 @@ export default function Portfolio() {
         </motion.div>
 
         <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center gap-8 px-6 pt-28 text-center">
-          <Badge>Available for freelance & full‑time</Badge>
+          <Badge>Available for work</Badge>
           <h1 className="text-balance text-5xl font-black tracking-tight sm:text-6xl md:text-7xl">
-            Hi, I'm <span className="text-gradient">Your Name</span><br />
-            <span className="text-white/80">a Creative Web Developer</span>
+            Hi, I'm <span className="text-gradient">Berke Lahna</span><br />
+            <span className="text-white/80">a Computer Engineer</span>
           </h1>
           <p className="max-w-2xl text-lg text-white/70">
             I craft fast, accessible interfaces and rich interactions—bringing ideas to life with clean code and modern aesthetics.
@@ -402,11 +433,62 @@ export default function Portfolio() {
           <AboutReveal />
         </div>
       </section>
+             {/* EDUCATION + EXPERIENCE */}
+      <section id="Education_Experience" className="relative mx-auto max-w-6xl px-6 py-24 sm:py-28">
+        <h2 className="mb-12 text-3xl font-bold tracking-tight sm:text-4xl"> Education & Experience</h2>
+        
+        <div className="grid gap-8 md:grid-cols-2">
+
+          {/* EDUCATION */}
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-xl">
+            <h3 className="text-2xl font-semibold mb-4">Education</h3>
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-xl font-semibold"> Computer Engineering</h4>
+                <p className="text-sm text-white/70">TED University • 2020 – 2024</p>
+                <p className="mt-2 text-white/80">
+                  Bachelors degree in Computer engineering.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-xl font-semibold">Applied Data Analytics Secondary Field</h4>
+                <p className="text-sm text-white/70">TED University • 2022 – 2024</p>
+                <p className="mt-2 text-white/80">
+                  Completed Secondary Field on Applied Data Analytics.
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* EXPERIENCE */}
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-xl">
+            <h3 className="text-2xl font-semibold mb-4">Experience</h3>
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-xl font-semibold">Summer Intern</h4>
+                <p className="text-sm text-white/70">Aselsan • Aug 2023 - Sep 2023</p>
+                <p className="mt-2 text-white/80">
+                 Developed a full stack project using React and .Net Core.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-xl font-semibold">Summer Intern</h4>
+                <p className="text-sm text-white/70">CEY Savunma • Aug 2022 - Sep 2022</p>
+                <p className="mt-2 text-white/80">
+                  Developed a Desktop app project using QT and C++.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </section>
+
 
       {/* WORK */}
       <section id="work" className="relative mx-auto max-w-7xl px-6 py-24">
         <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Selected Work</h2>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">My Projects</h2>
           <div className="flex flex-wrap gap-2">
             {CATEGORIES.map((c) => (
               <button
@@ -497,9 +579,9 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section id="testimonials" className="relative mx-auto max-w-6xl px-6 py-24">
-        <h2 className="mb-8 text-3xl font-bold tracking-tight sm:text-4xl">Testimonials</h2>
+      {/* REFERENCES */}
+      { <section id="references" className="relative mx-auto max-w-6xl px-6 py-24">
+        <h2 className="mb-8 text-3xl font-bold tracking-tight sm:text-4xl">References</h2>
         <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6">
           <div className="mb-4 flex items-center justify-between">
             <div className="text-sm text-white/60">Swipe (drag) or use controls</div>
@@ -525,21 +607,21 @@ export default function Portfolio() {
               className="grid gap-6 sm:grid-cols-[80px,1fr]"
             >
               <img
-                src={TESTIMONIALS[idx].avatar}
+                src={REFERENCES[idx].avatar}
                 alt="Avatar"
                 className="h-20 w-20 rounded-full border border-white/10"
               />
               <blockquote>
-                <p className="text-lg leading-relaxed text-white/90">“{TESTIMONIALS[idx].quote}”</p>
+                <p className="text-lg leading-relaxed text-white/90">{REFERENCES[idx].quote}</p>
                 <footer className="mt-3 text-sm text-white/70">
-                  {TESTIMONIALS[idx].name} • {TESTIMONIALS[idx].role}
+                  {REFERENCES[idx].name} 
                 </footer>
               </blockquote>
             </motion.div>
           </motion.div>
 
           <div className="mt-6 flex items-center justify-center gap-2">
-            {TESTIMONIALS.map((_, i) => (
+            {REFERENCES.map((_, i) => (
               <button
                 key={i}
                 onClick={() => setIdx(i)}
@@ -549,51 +631,9 @@ export default function Portfolio() {
             ))}
           </div>
         </div>
-      </section>
+      </section> }
 
-      {/* CONTACT */}
-      <section id="contact" className="relative mx-auto max-w-7xl px-6 py-24">
-        <h2 className="mb-8 text-3xl font-bold tracking-tight sm:text-4xl">Get in touch</h2>
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr,520px]">
-          <motion.form
-            onSubmit={onSubmit}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6 }}
-            className="relative rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl"
-          >
-            <div className="grid gap-4 sm:grid-cols-2">
-              <Field label="Name">
-                <input required name="name" className="input" placeholder="Your name" />
-              </Field>
-              <Field label="Email">
-                <input required type="email" name="email" className="input" placeholder="you@example.com" />
-              </Field>
-              <Field label="Subject" className="sm:col-span-2">
-                <input required name="subject" className="input" placeholder="Let's build something" />
-              </Field>
-              <Field label="Message" className="sm:col-span-2">
-                <textarea required name="message" className="input min-h-[140px]" placeholder="Tell me about your project" />
-              </Field>
-            </div>
-            <div className="mt-5 flex items-center justify-between gap-3 text-sm text-white/60">
-              <div className="flex items-center gap-2"><Mail size={16} /> you@domain.com</div>
-              <button
-                type="submit"
-                disabled={sending}
-                className="rounded-xl bg-[var(--accent)] px-5 py-3 font-semibold text-slate-900 transition hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-60"
-              >
-                {sending ? "Sending…" : "Send Message"}
-              </button>
-            </div>
-          </motion.form>
-
-          {/* Interactive map (zoom on hover/click) */}
-          <InteractiveMap />
-        </div>
-      </section>
-
+     
       {/* FOOTER (sticky reveal) */}
       <footer
         className={`fixed inset-x-0 bottom-0 z-40 transition-transform duration-500 ${
@@ -697,8 +737,8 @@ function AboutReveal() {
         className="grid grid-cols-1 gap-3 sm:grid-cols-3"
       >
         {[
-          ["Location", <span className="inline-flex items-center gap-2" key="loc"><MapPin size={16} /> Türkiye</span>],
-          ["Focus", "Frontend • Interaction • Performance"],
+          ["Location", <span className="inline-flex items-center gap-2" key="loc"><MapPin size={16} /> Ankara, Türkiye</span>],
+          ["Focus", "Software Development, Web Design, ML, Embedded Systems"],
           ["Stack", "React, TypeScript, Node, Tailwind"],
         ].map(([label, value]) => (
           <div key={String(label)} className="rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-white/80">
@@ -745,35 +785,4 @@ function SkillBar({ name, level, blurb, delay = 0 }: { name: string; level: numb
   );
 }
 
-function InteractiveMap() {
-  const [zoomed, setZoomed] = useState(false);
-  return (
-    <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5">
-      <div className="absolute right-4 top-4 z-10 rounded-full bg-black/50 px-3 py-1 text-xs text-white/80">
-        Hover or click to zoom
-      </div>
-      <div className="relative aspect-[4/3] w-full">
-        {/* <iframe
-          title="Map"
-          loading="lazy"
-          src="https://www.google.com/maps?q=Istanbul%2C%20Turkey&z=6&output=embed"
-          className={`absolute inset-0 h-full w-full origin-center transition-transform duration-700 ${
-            zoomed ? "scale-125" : "group-hover:scale-110"
-          }`}
-          style={{ filter: "grayscale(40%) contrast(110%) brightness(90%)" }}
-        /> */}
-        <button
-          onClick={() => setZoomed((z) => !z)}
-          className="absolute inset-0"
-          aria-label="Toggle map zoom"
-        />
-      </div>
-      <div className="flex items-center justify-between p-4 text-sm text-white/70">
-        <div className="inline-flex items-center gap-2"><MapPin size={16} /> Istanbul, TR</div>
-        <a href="#contact" className="text-[var(--accent)] underline-offset-4 hover:underline">
-          Plan a coffee chat
-        </a>
-      </div>
-    </div>
-  );
-}
+
