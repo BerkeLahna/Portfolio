@@ -121,15 +121,72 @@ const PROJECTS = [
       </svg>",
     link: "https://berkelahna-ada442final-project-app-wovmxi.streamlit.app/",
   },
+      {
+    id:6,
+    title: "Lines of Code counter.",
+    category: "Development",
+    description:
+      "A QT application using C++ that counts the LOC of company projects over the course of a month in my Cey Savunma summer internship.",
+    tech: ["QT Framework", "C++"],
+    image: "data:image/svg+xml;utf8,\
+      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'>\
+        <rect width='800' height='500' fill='%230a0f1f'/>\
+        <g fill='%2345ffce'>\
+          <rect x='130' y='120' width='540' height='40' rx='8' opacity='0.6'/>\
+          <rect x='130' y='190' width='320' height='40' rx='8' opacity='0.9'/>\
+          <rect x='130' y='260' width='470' height='40' rx='8' opacity='0.7'/>\
+        </g>\
+        <text x='130' y='90' fill='%23c7d2fe' font-size='30' font-family='Inter, sans-serif'>Chat UI</text>\
+      </svg>",
+    link: "404",
+  },
+    {
+    id:7,
+    title: "Visitor Logbook",
+    category: "Full Stack",
+    description:
+      "A full stack project using React and .Net Core and SQL over the course of a month in my Aselsan summer internship.",
+    tech: [".Net", "C#", "React", "JavaScript", "HTML", "CSS","SQL"],
+    image: "data:image/svg+xml;utf8,\
+      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'>\
+        <rect width='800' height='500' fill='%230a0f1f'/>\
+        <g fill='%2345ffce'>\
+          <rect x='130' y='120' width='540' height='40' rx='8' opacity='0.6'/>\
+          <rect x='130' y='190' width='320' height='40' rx='8' opacity='0.9'/>\
+          <rect x='130' y='260' width='470' height='40' rx='8' opacity='0.7'/>\
+        </g>\
+        <text x='130' y='90' fill='%23c7d2fe' font-size='30' font-family='Inter, sans-serif'>Chat UI</text>\
+      </svg>",
+    link: "404",
+  },
+   {
+    id:8,
+    title: "Remote Camera App",
+    category: "Mobile Development",
+    description:
+      "A camera app for android phones that also detect movement and notifies the user by sending a notification, playing alarm sounds and captures images during the movement process.",
+    tech: ["Kotlin", "XML"],
+    image: "data:image/svg+xml;utf8,\
+      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'>\
+        <rect width='800' height='500' fill='%230a0f1f'/>\
+        <g fill='%2345ffce'>\
+          <rect x='130' y='120' width='540' height='40' rx='8' opacity='0.6'/>\
+          <rect x='130' y='190' width='320' height='40' rx='8' opacity='0.9'/>\
+          <rect x='130' y='260' width='470' height='40' rx='8' opacity='0.7'/>\
+        </g>\
+        <text x='130' y='90' fill='%23c7d2fe' font-size='30' font-family='Inter, sans-serif'>Chat UI</text>\
+      </svg>",
+    link: "404",
+  },
 ];
 
 const SKILLS = [
-  { name: "Java", level: 92, blurb: "4 Years of learning as the main language of TED University." },
-  { name: "SQL", level: 86, blurb: "Hooks, state mgmt, perf patterns." },
+  { name: "Java", level: 92, blurb: "4 Years of learning as the main programming language of TED University." },
+  { name: "SQL", level: 76, blurb: "Used in several projects." },
   { name: "C", level: 74, blurb: "Used for 2 Terms." },
   { name: "React", level: 70, blurb: "Used for a month is Aselsan internship project as the frontend counterpart." },
   { name: ".NET", level: 65, blurb: "Used for a month is Aselsan internship project as the backend counterpart." },
-  { name: "Kotlin", level: 75, blurb: "Used in the senior project." },
+  { name: "Kotlin", level: 75, blurb: "Used in the senior project and some personal projects." },
   { name: "R", level: 85, blurb: "Used in the Applied Data Analytics secondary field for a term." },
   { name: "Julia", level: 82, blurb: "Used in the Applied Data Analytics secondary field for a term." },
   { name: "Python", level: 90, blurb: "Used in the Applied Data Analytics secondary field for 2 terms and some personal projects." },
@@ -408,10 +465,7 @@ export default function Portfolio() {
               Contact Me <ArrowDown size={18} />
             </a>
           </div>
-          <div className="mt-8 flex items-center gap-3 text-xs text-white/60">
-            <span className="h-1 w-1 rounded-full bg-[var(--accent)]"></span>
-            Smooth scroll • Parallax • Micro‑interactions
-          </div>
+          
         </div>
       </section>
 
@@ -567,7 +621,6 @@ export default function Portfolio() {
                 </RadialBarChart>
               </ResponsiveContainer>
             </div>
-            <p className="mt-3 text-sm text-white/70">Animated on mount. Hover individual skills on the right for details.</p>
           </div>
 
           {/* Bars with hover blurbs */}
@@ -584,7 +637,7 @@ export default function Portfolio() {
         <h2 className="mb-8 text-3xl font-bold tracking-tight sm:text-4xl">References</h2>
         <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6">
           <div className="mb-4 flex items-center justify-between">
-            <div className="text-sm text-white/60">Swipe (drag) or use controls</div>
+            <div className="text-sm text-white/60"> </div>
             <button
               className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm transition hover:bg-white/10"
               onClick={() => setAutoPlay((a) => !a)}
@@ -643,7 +696,7 @@ export default function Portfolio() {
         <div className="mx-auto max-w-7xl px-6 pb-4">
           <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-4 backdrop-blur">
             <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-              <p className="text-sm text-white/70">© {new Date().getFullYear()} Your Name — All rights reserved.</p>
+              <p className="text-sm text-white/70">© {new Date().getFullYear()} Berke Lahna.</p>
               <div className="flex items-center gap-3">
                 <a
                   href="#"
@@ -734,12 +787,13 @@ function AboutReveal() {
         initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, delay: 0.1 }}
-        className="grid grid-cols-1 gap-3 sm:grid-cols-3"
+        className="grid grid-cols-1 gap-3 sm:grid-cols-2"
       >
         {[
           ["Location", <span className="inline-flex items-center gap-2" key="loc"><MapPin size={16} /> Ankara, Türkiye</span>],
           ["Focus", "Software Development, Web Design, ML, Embedded Systems"],
-          ["Stack", "React, TypeScript, Node, Tailwind"],
+          ["Contact Information", "berke.lahna@tedu.edu.tr "],
+        
         ].map(([label, value]) => (
           <div key={String(label)} className="rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-white/80">
             <div className="text-xs uppercase tracking-wider text-white/60">{label}</div>
